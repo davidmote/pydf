@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Codebiosys/pdfy.svg?token=QV3wJRfpprDN5XdYRpuT&branch=master)](https://travis-ci.com/Codebiosys/pdfy)
+
 # PDFy
 
 A tool that generates a PDF from an re-usable HTML template
