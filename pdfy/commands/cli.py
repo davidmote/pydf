@@ -12,8 +12,7 @@ import sys
 
 import click
 
-from .. import template_to_pdf
-from ..utils import unzip, find_index
+from ..utils import unzip, find_index, template_to_pdf
 
 
 @click.command()

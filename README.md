@@ -5,7 +5,7 @@ A tool that generates a PDF from an re-usable HTML template
 
 ## Background
 
-Several project require PDF report generation with included images and graphs,
+Several projects require PDF report generation with included images and graphs,
 such as application validation/verification via automated testing,
 templated reports, customized documents, etc. Therefore the need for a service
 to automate this workflow is desired.
