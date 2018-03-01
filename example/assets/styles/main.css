@@ -1,0 +1,27 @@
+/**
+ * CSS file demonstrating that an external style sheet can be rendered by the
+ * html-pdf tool
+ */
+
+body {
+  font-family: sans-serif;
+  font-size: 14pt;
+  background-color: lightgreen;
+}
+
+/* Demonstrate loading a images via CSS */
+#css-image {
+  background-image: url(../images/stock-photo-spider.jpg);
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+}
+
+/* Demonstrate prevention of ugly page breaks between blocks of content */
+@media print
+{
+  p, div {
+    page-break-inside: avoid;
+  }
+}
+

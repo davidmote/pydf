@@ -1,0 +1,78 @@
+<!--
+
+Example HTML template showcasing expected funcationality
+
+-->
+<html>
+<head>
+  <link rel="stylesheet" href="assets/styles/main.css" />
+</head>
+<body>
+  <!-- Page header for every page -->
+  <div id="pageHeader">
+    <h1>This is the ULTIMATE header</h1>
+  </div>
+  <h1>Header 1</h1>
+  <h2>Header 2</h2>
+  <h3>Header 3</h3>
+  <h4>Header 4</h4>
+  <hr />
+
+  <div>Generated via template paramters</div>
+  {{#stooges.length}}
+    <ul>
+      {{#stooges}}
+        <li> {{name}} </li>
+      {{/stooges}}
+    </ul>
+  {{/stooges.length}}
+  {{^stooges}}
+    No parameters
+  {{/stooges}}
+  <hr />
+  <ul>
+    <li>Item #1</li>
+    <li>Item #2</li>
+    <li>Item #3</li>
+  </ul>
+  <hr />
+  <pre>
+    Pre
+        Formatted
+            Text
+  </pre>
+  <hr />
+  <p>Image by file path</p>
+  <img
+    src="assets/images/stock-photo-trex.jpg"
+    width="100"
+    alt="A T-Rex" />
+  <hr />
+  <p>Image by CSS</p>
+  <div id="css-image"></div>
+  <hr />
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed nibh gravida,
+  tempus massa vel, sodales risus. Pellentesque eu mauris sit amet sem aliquam
+  pulvinar. Pellentesque a enim tortor. Sed rhoncus porta neque eget auctor. Sed
+  ut ultrices quam. Aliquam erat volutpat. Etiam mattis quam ut porta luctus.
+  Suspendisse a lacus dapibus, tincidunt diam nec, vehicula elit. Etiam efficitur
+  posuere rhoncus. Nulla libero tellus, elementum in felis a, interdum malesuada
+  nibh. Duis nisl nisl, accumsan eu porttitor a, tempor non dolor. Quisque in ante
+  porta, venenatis lectus nec, finibus felis. Pellentesque ex sem, ultrices et
+  felis vel, sollicitudin ornare neque. Vivamus imperdiet magna quis facilisis
+  scelerisque. Aliquam eget est ullamcorper, posuere nibh sit amet, commodo ipsum.
+  </p>
+  <p>
+  Integer interdum posuere risus, eget posuere lorem aliquet ac. Mauris pretium
+  metus nec sagittis efficitur. Nam eu porttitor lectus. Aliquam tincidunt augue a
+  eros hendrerit, euismod consectetur magna egestas. Morbi odio libero, luctus
+  facilisis enim vitae, finibus vulputate metus. Maecenas sit amet odio tristique,
+  eleifend purus at, porttitor ipsum. Donec lorem augue, tristique nec leo a,
+  lacinia pharetra risus. Quisque consectetur sem sit amet nisl sagittis, vel
+  molestie ipsum aliquet. Donec consequat urna id dui egestas imperdiet. Ut
+  facilisis, dui gravida laoreet lacinia, neque risus porttitor arcu, ac porttitor
+  lectus ligula quis orci. Donec quis accumsan lacus.
+  </p>
+</body>
+</html>

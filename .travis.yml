@@ -1,0 +1,21 @@
+# Global Config
+language: python
+sudo: required
+
+addons:
+  apt:
+    # http://weasyprint.readthedocs.io/en/latest/install.html#debian-ubuntu
+    - python3-cffi
+    - libcairo2
+    - libpango-1.0-0
+    - libpangocairo-1.0-0
+    - libgdk-pixbuf2.0-0
+    - libffi-dev
+    - shared-mime-info
+
+install:
+  - pip install -r requirements-develop.txt
+
+script:
+  - flake8
+  - pytest -vv
