@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.com/Codebiosys/pdfy.svg?token=QV3wJRfpprDN5XdYRpuT&branch=master)](https://travis-ci.com/Codebiosys/pdfy)
+[![Build Status](https://travis-ci.com/Codebiosys/pydf.svg?token=QV3wJRfpprDN5XdYRpuT&branch=master)](https://travis-ci.com/Codebiosys/pydf)
 
-# PDFy
+# PyDF
 
 A tool that generates a PDF from an re-usable HTML template
 
@@ -45,16 +45,16 @@ http://weasyprint.readthedocs.io/en/latest/install.html#installing
 ## Installation
 
 ```
-  > pip install pdfy
+  > pip install pydf
 ```
 
 
 ## Development
 
 ```
-  > mkvirtualenv pdfy
-  > git clone https://github.com/Codebiosys/pdfy.git
-  > cd pdfy
+  > mkvirtualenv pydf
+  > git clone https://github.com/Codebiosys/pydf.git
+  > cd pydf
   > pip install -r requirements-develop.txt
   > pip install -e .
   > pytest -vv

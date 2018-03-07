@@ -9,7 +9,7 @@ class Test_unzip:
         import os.path
         import zipfile
 
-        from pdfy.utils import unzip
+        from pydf.utils import unzip
 
         zip_file = tmpdir.join('bundle.zip')
         unzip_dir = tmpdir.join('files')
@@ -24,7 +24,7 @@ class Test_unzip:
         """ It should ignore hidden files """
         import zipfile
 
-        from pdfy.utils import unzip
+        from pydf.utils import unzip
 
         zip_file = tmpdir.join('bundle.zip')
         unzip_dir = tmpdir.join('files')
@@ -41,7 +41,7 @@ class Test_find_index:
 
     def test_found(self):
         """ It should find a name that begins with "index." """
-        from pdfy.utils import find_index
+        from pydf.utils import find_index
 
         expected = 'index.htm'
         result = find_index([expected])
@@ -49,7 +49,7 @@ class Test_find_index:
 
     def test_not_found(self):
         """ It returns None if not the index was not found """
-        from pdfy.utils import find_index
+        from pydf.utils import find_index
 
         result = find_index(['something.html'])
         assert result is None
@@ -61,7 +61,7 @@ class Test_template_to_pdf:
     def test_success(self, tmpdir):
         """ It should successfull generate a PDF from a template file """
 
-        from pdfy.utils import template_to_pdf
+        from pydf.utils import template_to_pdf
 
         template_path = tmpdir.join('template.html')
         template_path.write('My {foo}')
@@ -72,13 +72,13 @@ class Test_template_to_pdf:
 
         assert pdf_bytes.startswith(b'%PDF-')
 
-    @mock.patch('pdfy.utils.tempfile.NamedTemporaryFile')
-    @mock.patch('pdfy.utils.HTML')
+    @mock.patch('pydf.utils.tempfile.NamedTemporaryFile')
+    @mock.patch('pydf.utils.HTML')
     def test_html_relative(self, NamedTemporaryFile, HTML, tmpdir):
         """ It should render the template same directory so assets still work """
 
         import os.path
-        from pdfy.utils import template_to_pdf
+        from pydf.utils import template_to_pdf
 
         template_path = tmpdir.join('template.html')
         template_path.write('My {foo}')

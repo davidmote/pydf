@@ -13,14 +13,14 @@ class Test_main:
 
     def test_source_required(self, runner, tmpdir):
         """ It should require template source """
-        from pdfy.commands.cli import main
+        from pydf.commands.cli import main
         result = runner.invoke(main, ['--target', str(tmpdir.join('output.pdf'))])
         assert result.exit_code == 1, result.output
         assert 'Source required' in result.output
 
     def test_target_required(self, runner, tmpdir):
         """ It should require a target output file """
-        from pdfy.commands.cli import main
+        from pydf.commands.cli import main
         source = tmpdir.join('source.html')
         source.write('<b>Hello World!</b>')
         result = runner.invoke(main, ['--source', str(source)])
@@ -29,7 +29,7 @@ class Test_main:
 
     def test_success_regular_template(self, runner, tmpdir):
         """ It should generate a PDF for a regular template file """
-        from pdfy.commands.cli import main
+        from pydf.commands.cli import main
         source = tmpdir.join('source.html')
         source.write('<b>Hello World!</b>')
         target = tmpdir.join('output.pdf')
@@ -43,7 +43,7 @@ class Test_main:
     def test_sucess_zip_template(self, runner, tmpdir):
         """ It should accept a zip file that contains template assets """
         import zipfile
-        from pdfy.commands.cli import main
+        from pydf.commands.cli import main
 
         source = tmpdir.join('template.zip')
         target = tmpdir.join('output.pdf')
@@ -61,7 +61,7 @@ class Test_main:
     def test_fail_zip_template_no_index(self, runner, tmpdir):
         """ It should fail if the zip bundle has no index file """
         import zipfile
-        from pdfy.commands.cli import main
+        from pydf.commands.cli import main
 
         source = tmpdir.join('template.zip')
         target = tmpdir.join('output.pdf')

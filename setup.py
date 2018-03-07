@@ -21,14 +21,14 @@ REQUIRES = list(yield_packages('requirements.txt'))
 DEVELOP = list(yield_packages('requirements-develop.txt'))
 
 setup(
-    name='pdfy',
+    name='pydf',
     version='0.1.0',
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',
     description='A tool to generate PDF reports from template files',
     long_description=README,
-    url='https://github.com/Codebiosys/pdfy.git',
+    url='https://github.com/Codebiosys/pydf.git',
     author='CodeBiosys, Inc',
     author_email='developers@codebiosys.com',
     classifiers=[
@@ -45,6 +45,6 @@ setup(
     tests_require=DEVELOP,
     entry_points="""
         [console_scripts]
-        pdfy=pdfy.commands.cli:main
+        pydf=pydf.commands.cli:main
    """
 )

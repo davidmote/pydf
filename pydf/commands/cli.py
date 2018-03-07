@@ -1,4 +1,4 @@
-""" Command-line interface to PDFy functions.
+""" Command-line interface to PyDF functions.
 
 The intention of this script is to be callable from some deamon services
 such as a dedicated Docker microservice
