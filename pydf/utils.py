@@ -53,6 +53,8 @@ def template_to_pdf(source_fp, target_fp=None, params={}, config={}):
 
     :return: PDF byte string if not target_fp was specified
     """
+    source_fp.seek(0)  # start at the beginning of a potentially read file
+
     template_content = source_fp.read()
     html_content = pystache.render(template_content, params)
 
