@@ -1,3 +1,5 @@
 click==6.7.*        # Command-line tools
-weasyprint==0.42.*  # HTML to PDF printing
+# TODO: Use pinned version when 0.43 is released
+# HTML to PDF printing
+-e git+https://github.com/Kozea/WeasyPrint@56904ba#egg=weasyprint
 pystache==0.5.*     # Template rendering
