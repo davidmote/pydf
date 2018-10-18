@@ -22,7 +22,7 @@ DEVELOP = list(yield_packages('requirements-develop.txt'))
 
 setup(
     name='pydf',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(),
     include_package_data=True,
     license='MIT License',
