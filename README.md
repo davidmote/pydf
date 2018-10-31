@@ -40,7 +40,7 @@ http://weasyprint.readthedocs.io/en/latest/install.html#installing
 ## Installation
 
 ```
-  > pip install pydf
+  > pip install git+git://github.com/Codebiosys/pydf.git@master#egg=pydf
 ```
 
 
