@@ -7,12 +7,7 @@ A tool that generates a PDF from an re-usable HTML template
 
 ## Background
 
-Several projects require PDF report generation with included images and graphs,
-such as application validation/verification via automated testing,
-templated reports, customized documents, etc. Therefore the need for a service
-to automate this workflow is desired.
-
-The component will take a template, render with parameters, apply a set of style
+This library  will take a mustache template, render with parameters, apply a set of style
 sheets, include images, and output a PDF file.
 
 
@@ -20,7 +15,7 @@ sheets, include images, and output a PDF file.
 
 * Must include dynamic templates (user should be able to choose template)
 * Should be able to update template without having to update software
-* Must be able to specify a header and footer
+* Must be able to specify a page header and footer
 * Must be able to include images
 * Must be able to include CSS styling
 
@@ -45,7 +40,7 @@ http://weasyprint.readthedocs.io/en/latest/install.html#installing
 ## Installation
 
 ```
-  > pip install pydf
+  > pip install git+git://github.com/Codebiosys/pydf.git@master#egg=pydf
 ```
 
 
@@ -59,3 +54,13 @@ http://weasyprint.readthedocs.io/en/latest/install.html#installing
   > pip install -e .
   > pytest -vv
 ```
+
+## Running Tests
+To run tests, install pydf in development mode (as above), and run pytest
+
+```
+  > pytest
+```
+
+## Contributing
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are welcome.
