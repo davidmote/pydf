@@ -1,5 +1,5 @@
 
-Note: This is a fork of clone of https://github.com/Codebiosys/pydf.git,
+Note: This is a clone of https://github.com/Codebiosys/pydf.git,
 which is no longer maintained.
 
 # PyDF
