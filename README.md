@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.com/Codebiosys/pydf.svg?token=QV3wJRfpprDN5XdYRpuT&branch=master)](https://travis-ci.com/Codebiosys/pydf)
+
+Note: This is a fork of clone of https://github.com/Codebiosys/pydf.git,
+which is no longer maintained.
 
 # PyDF
 
@@ -40,7 +42,7 @@ http://weasyprint.readthedocs.io/en/latest/install.html#installing
 ## Installation
 
 ```
-  > pip install git+git://github.com/Codebiosys/pydf.git@master#egg=pydf
+  > pip install git+git://github.com/davidmote/pydf.git@master#egg=pydf
 ```
 
 
@@ -48,7 +50,7 @@ http://weasyprint.readthedocs.io/en/latest/install.html#installing
 
 ```
   > mkvirtualenv pydf
-  > git clone https://github.com/Codebiosys/pydf.git
+  > git clone https://github.com/davidmote/pydf.git
   > cd pydf
   > pip install -r requirements-develop.txt
   > pip install -e .
